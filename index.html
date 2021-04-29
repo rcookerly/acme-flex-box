@@ -1,1 +1,85 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acme Layout with Flexbox</title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <div id="page-container">
+      <nav id="header">
+        <div id="brand" class="nav-item">
+          <a href="#">Acme Layout</a>
+        </div>
+        <div class="nav-item">
+          <a href="#">Users</a>
+        </div>
+        <div class="nav-item">
+          <a href="#">Departments</a>
+        </div>
+        <div class="nav-item">
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+      <div id="title">
+        Users
+      </div>
+      <div id="userform">
+        <form id="create-user" action="endpoint" method="POST">
+            <div class="form-row form-title">
+              Create New Users
+            </div>
+            <div class="form-row">
+              <label for="firstName">First Name</label>
+              <input id="firstName" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="lastName">Last Name </label>
+              <input id="lastName" class="form-control" type="text" />
+            </div>
+            <div class="form-row">
+               <label for="department">Department</label>
+               <select id="department">
+                 <option selected disabled>-- None --</option>
+               </select>
+            </div>
+            <div class="form-row form-buttons">
+              <button id="clearButton" type="button">Clear</button>
+              <button id="saveButton"  type="submit">Save</button>
+            </div>
+        </form>
+      </div>
+      <div id="users">
+        <div class="user-box">
+          <div class="user-title">User A</div>
+          <div class="user-description">Some text for the user.</div>
+        </div>
+        <div class="user-box">
+          <div class="user-title">User A</div>
+          <div class="user-description">Some text for the user.</div>
+        </div>
+        <div class="user-box">
+          <div class="user-title">User A</div>
+          <div class="user-description">Some text for the user.</div>
+        </div>
+        <div class="user-box">
+          <div class="user-title">User A</div>
+          <div class="user-description">Some text for the user.</div>
+        </div>
+        <div class="user-box">
+          <div class="user-title">User A</div>
+          <div class="user-description">Some text for the user.</div>
+        </div>
+        <div class="user-box">
+          <div class="user-title">User A</div>
+          <div class="user-description">Some text for the user.</div>
+        </div>
+        <div class="user-box">
+          <div class="user-title">User A</div>
+          <div class="user-description">Some text for the user.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

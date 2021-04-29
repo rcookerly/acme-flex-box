@@ -1,1 +1,152 @@
+html,
+body {
+  margin: 0;
+  background: #f8f8ff;
+}
 
+#page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  display: flex;
+  background: #007bff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+#header .nav-item {
+  flex: 1;
+}
+
+#brand {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+#title {
+  display: flex;
+  padding: 10px 15px;
+  font-size: 30px;
+}
+
+#userform {
+  display: flex;
+  justify-content: center;
+}
+
+#create-user {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.form-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+}
+
+.form-row label {
+  flex: 1;
+  font-size: 16px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.form-row select {
+  flex: 3;
+}
+
+.form-row input {
+  flex: 3;
+}
+
+.form-buttons {
+  justify-content: center;
+  align-items: center;
+}
+
+#users {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 0px;
+  margin: 15px;
+}
+
+.user-box {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  flex-basis: 30%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-title {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  flex: 1;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.user-description {
+  text-align: center;
+  flex: 1;
+  padding: 0px 10px 15px 10px;
+}
+
+#saveButton {
+  background: #007bff;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #create-user {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+  #clearButton {
+    margin-bottom: 5px;
+  }
+
+  #users {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
